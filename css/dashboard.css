@@ -41,13 +41,7 @@ body {
     font-size: 1em;
     color: #2F2E2E;
     letter-spacing: 0.02em !important;
-    background: url('../images/cs-background-img.png') no-repeat center center fixed;
-    background-color: rgba(255, 255, 255, 0.5);
-    background-blend-mode: lighten;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: rgba(238, 237, 237, 0.3);
 }
 
 
@@ -70,12 +64,6 @@ body {
     padding-bottom: 3px;
     background: #fff;
     box-shadow: 0px 2px 7px rgba(79, 79, 79, 0.03);
-}
-
-.navbar .logo{
-    display: flex;
-    margin: 0;
-    padding: 0;
 }
 
 .navbar .logo{
@@ -216,150 +204,300 @@ body {
     color: #9A6BF2 !important;
 }
 
+.layout {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-gap: 40px;
+    padding: 50px;
+}
+
 .open-nav{
     display: none;
 }
 
 
+/* Overlay */
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.55); /* Black background with opacity */
+    z-index: 100; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+
+/*Side Menu Starts Here*/
+
+.sidenav::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(197, 197, 197, 0.8);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(197, 197, 197, 0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(197, 197, 197, 0.8); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(197, 197, 197, 0.8); 
+}
+
+.sidenav {
+    width: 250px;
+    height: 100%;
+    padding: 48px 32px;
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.03);
+    border-radius: 6px;
+    background: #fff;
+}
+
+.sidenav .inn .top {
+    text-align: center;
+}
+
+.sidenav .inn .top img {
+    width: 70px;
+    height: 70px;
+    background: rgba(196, 196, 196, 0.35);
+    border-radius: 100%;
+    margin-bottom: 30px;
+}
+
+.sidenav .inn .top p {
+    font-size: 0.9em;
+    color: #76787A;
+    margin-bottom: 10px;
+}
+
+.sidenav .inn .top h5 {
+    font-size: 1.2em;
+    color: #2F2E2E;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.sidenav .inn hr {
+    margin-top: 38px;
+    margin-bottom: 50px;
+}
+
+.sidenav .inn .bottom .link {
+    margin: 0;
+    margin-bottom: 35px;
+}
+
+.sidenav .inn .bottom .link a {
+    color: #2F2E2E;
+}
+.sidenav .inn .bottom .link a:hover {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sidenav .inn .bottom .link a i {
+    margin-right: 15px;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+    display: none;
+}
+
+.open-sidenav{
+    display: none;
+}
+
+
+/*Side Menu Ends Here*/
+
+
 /* Main Page Starts Here */
 
 .main{
+    width: 100%;
     margin: 0;
     padding: 0;
 }
 
 .main-page-content{
-    padding: 50px 50px;
+    margin: 0px;
     padding-bottom: 0;
 }
 
-.section {
-    padding: 0px 50px;
-    background: rgba(238, 237, 237, 0.3);
-}
-
-.section-one {
-    padding-top: 40px !important;
-    padding-bottom: 40px !important;
-    text-align: center;
-    background: rgba(196, 196, 196, 0.3) !important;
-}
-
-.section-one h3 {
+.hello {
     font-size: 1.3em;
     font-weight: bold;
-    margin-bottom: 16px;
+    margin-bottom: 13px;
 }
 
-.section-one a {
-    color: #2F2E2E;
+.tabs {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    margin-top: 48px;
+}
+
+.tabs .tab {
+    display: flex;
+    width: 100%;
+    padding: 15px 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.06);
+    border-radius: 6px;
+}
+
+.tabs .tab img {
+    width: 55px;
+    height: 45px;
+    border-radius: 100%;
+    margin-right: 15px;
+}
+.tabs .tab .right {
+    width: 100%;
+    text-align: right;
+}
+
+.tabs .tab .right p {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+.tabs .tab .right h4 {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 0;
 }
 
 .section-two {
     width: 100%;
-    display: grid;
-    grid-template-columns: 3.7fr 1.3fr;
+    margin-top: 80px;
 }
 
-.section-two .left {
-    padding: 64px 30px;
-    background: #fff;
-}
-
-.section-two h6 {
+.section-two .info-text {
     font-size: 1.05em;
     font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.section-two hr {
-    width: 95%;
-    background: #D6DEE3;
-    margin-left: 0;
     margin-bottom: 25px;
 }
 
-.section-two .left .items {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 25px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #eee;
+.section-two .cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
 }
 
-.items .item p {
-    font-size: 0.8em;
-    color: #76787A;
-    margin-bottom: 25px;
-}
-
-.items .item .image-info {
-    display: flex;
-}
-
-.items .item .image-info img {
-    width: 65px;
-    height: 60px;
+.section-two .cards .card {
+    position: relative;
+    color: #2F2E2E;
+    border: none;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06);
     border-radius: 6px;
 }
-
-.items .item .image-info .info {
-    margin-left: 15px;
+.section-two .cards .card:hover {
+    text-decoration: none;
 }
 
-.item h5 {
-    font-size: 1em;
-    font-weight: bold;
-    margin-bottom: 8px;
-}
-.item h5.green {
-    color: #73C124;
-}
-
-.item p {
-    font-size: 0.9em;
-    margin: 0px;
-}
-
-.items i {
-    font-size: 1.3em;
-    color: #E0E0E0;
-    margin-top: 17px;
-    cursor: pointer;
-}
-
-.section-two .right {
-    padding: 64px 30px;
-    background: #FAFAFA;
-    text-align: right;
-}
-
-.section-two .right hr {
-    width: 100%;
-}
-
-.section-two .right p {
-    font-size: 0.9em;
-    color: #76787A;
+.card .card-tag {
+    position: absolute;
+    top: 10px;
+    left: 0;
     margin: 0;
+    font-size: 0.9em;
+    padding: 7px 30px 7px 15px;
+    text-align: left;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 0px 100px 100px 0px;
+    z-index: 1;
 }
 
-.section-two .right h4 {
-    font-size: 1.7em;
+.card .card-img {
+    height: 190px;
+    width: 100%;
+    border-radius: 6px 6px 0px 0px;
+    object-fit: cover;
+    object-position: center center;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.card .card-inn {
+    padding: 12px 20px;
+    padding-bottom: 15px;
+}
+
+.card-inn h3 {
+    font-size: 1.3em;
     font-weight: bold;
-    color: #2F2E2E;
-    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
-.section-two .right .checkout-btn {
-    font-family: "Lato";
+.card-inn .period {
+    font-size: 0.9em;
+    margin-bottom: 18px;
+}
+
+.card-inn .return-img {
+    width: 13px;
+    height: 12px;
+    margin-right: 10px;
+}
+.card-inn .returns {
+    color: #76787A;
+    font-size: 0.9em;
+}
+
+.card-inn .percent-div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.percent-div .percent {
+    background: rgba(243, 229, 212, 0.2);
+    border-radius: 3px;
+    color: #BB8D53;
+    margin: 0;
+    padding: 2px 10px;
     font-size: 0.9em;
     font-weight: bold;
-    width: 100%;
-    padding: 7px 50px;
-    color: #fff;
-    background: #73C124;
-    border-radius: 3px;
+}
+
+.card-inn hr {
+   background: #E9EFF5;
+   margin-bottom: 10px;
+}
+
+.card-inn .location-img {
+    width: 14px;
+    height: 14px;
+    margin-right: 10px;
+    margin-top: -1px;
+}
+.card-inn .state {
+    font-size: 0.95em;
 }
 
 
@@ -472,45 +610,16 @@ footer .footer-nav .right-navs .right-nav-link-end{
 
 /*Responsive Page Starts Here*/
 
-@media screen and (max-width: 3000px){
-    .section {
-        padding: 0px 350px;
-    }
-}
-
-@media screen and (max-width: 1900px){
-    .section {
-        padding: 0px 250px;
-    }
-}
-
-@media screen and (max-width: 1650px){
-    .section {
-        padding: 0px 200px;
-    }
-}
-
-@media screen and (max-width: 1550px){
-    .section {
-        padding: 0px 150px;
-    }
-}
-
-@media screen and (max-width: 1450px){
-    .section {
-        padding: 0px 100px;
-    }
-}
-
 @media screen and (max-width: 1350px){
     .section {
         padding: 0px 50px;
     }
 }
 
-@media screen and (max-width: 1200px){
-    .section-one .inner {
-        width: 60%;
+@media screen and (max-width: 1400px){
+    .section-two .cards {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 25px;
     }
 }
 
@@ -527,29 +636,18 @@ footer .footer-nav .right-navs .right-nav-link-end{
         margin-right: 0px;
     }
 
-    .section {
-        padding: 0px 40px;
+    .layout {
+        padding: 50px 40px;
     }
 
-    .section-two .left .items {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 15px;
+    .tabs {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px;
     }
 
-    .items {
-        position: relative;
-    }
-
-    .items .item p {
-        margin-bottom: 10px;
-    }
-
-    .items i {
-        position: absolute;
-        top: 40px;
-        right: 10px;
-        margin: 0;
+    .section-two .cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px;
     }
 
     footer{
@@ -567,6 +665,10 @@ footer .footer-nav .right-navs .right-nav-link-end{
         margin-left: 0px;
         margin-top: 20px;
         width: 50%;
+    }
+
+    .layout {
+        padding: 50px 30px;
     }
 
     .open-nav{
@@ -587,11 +689,15 @@ footer .footer-nav .right-navs .right-nav-link-end{
     }
 }
 
-@media screen and (max-width: 900px){
-    .section-two .left .items {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 15px;
+@media screen and (max-width: 800px){
+    .tabs {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 40px;
+    }
+
+    .section-two .cards {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 40px;
     }
 }
 
@@ -610,8 +716,8 @@ footer .footer-nav .right-navs .right-nav-link-end{
         margin-bottom: 10px;
     }
 
-    .section {
-        padding: 0px 20px;
+    .layout {
+        padding: 50px 20px;
     }
 
     footer{
@@ -631,18 +737,74 @@ footer .footer-nav .right-navs .right-nav-link-end{
         padding: 7px 10px;
     }
 
-    .section {
-        padding: 0px 10px;
-    }
-
-    .section-two {
-        display: grid;
-        grid-template-columns: 1fr;
+    .layout {
+        padding: 50px 10px;
     }
 
     footer{
         padding-left: 10px;
         padding-right: 10px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 250px;
+        padding: 0;
+        margin: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0px;
+        padding-top: 55px;
+        z-index: 1000;
+        border-radius: 0px;
+    }
+    
+    .sidenav .closebtn{
+        display: block;
+        padding: 0px;
+        margin-top: 0px;
+        color: #333;
+    }
+
+    .open-sidenav{
+        display: block;
+        position: absolute;
+        top: 0px;
+        z-index: 10000;
+        padding: 0px;
+        margin-left: 2px;
+    }
+
+    .open-sidenav img {
+        position: fixed;
+        width: 30px;
+        top: 0px;
+        margin-top: 11.5px;
+        transform: rotate(180deg);
+    }
+
+    .sidenav .inn .bottom {
+        padding-left: 15px;
+    }
+
+    .above-nav {
+        padding: 9px 10px;
+    }
+
+    .navbar .logo{
+        margin-left: 45px;
+    }
+
+    .main{
+        margin-left: 0px;
+        width: 100%;
     }
 }
 
@@ -655,19 +817,6 @@ footer .footer-nav .right-navs .right-nav-link-end{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-row-gap: 20px;
-    }
-}
-
-@media screen and (max-width: 420px){
-    .section-two .left .items {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 10px;
-    }
-
-    .items .item .image-info {
-        display: flex;
-        margin-bottom: 8px;
     }
 }
 
