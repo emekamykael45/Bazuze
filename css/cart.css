@@ -322,10 +322,10 @@ body {
 }
 
 .items i {
-    background: red;
-    height: 20px;
-    width: 20px;
-    margin-top: 47px;
+    font-size: 1.3em;
+    color: #E0E0E0;
+    margin-top: 17px;
+    cursor: pointer;
 }
 
 .section-two .right {

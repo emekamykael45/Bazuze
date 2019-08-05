@@ -20,6 +20,7 @@
 
         <!-- Our Custom CSS -->
         <link rel="stylesheet" href="css/index.css"/>
+        <link rel="stylesheet" href="dist/swiper.min.css"/>
 
         <!-- JS -->
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
@@ -230,8 +231,62 @@
             <div class="section section-four">
                 <h3>Hear our investors</h3>
                 <hr>
-                <div class="swiper">
-                    
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/person1.png">
+                            <div class="inn">
+                                <h6>Lorem ipsum d iunduinuidv duoiuvdhdv dsunudvud dsuhudhudv dsinudvhudv duhduhdvn dsvudsuvnduv dsvuviindsu hbdhyd duud uisns iusnbdu djdj.</h6>
+                                <h5>Jonathan Dumebi</h5>
+                                <p>Maitama, Abuja</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/person2.png">
+                            <div class="inn">
+                                <h6>Lorem ipsum d iunduinuidv duoiuvdhdv dsunudvud dsuhudhudv dsinudvhudv duhduhdvn dsvudsuvnduv dsvuviindsu hbdhyd duud uisns iusnbdu djdj.</h6>
+                                <h5>Jonathan Dumebi</h5>
+                                <p>Maitama, Abuja</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/person1.png">
+                            <div class="inn">
+                                <h6>Lorem ipsum d iunduinuidv duoiuvdhdv dsunudvud dsuhudhudv dsinudvhudv duhduhdvn dsvudsuvnduv dsvuviindsu hbdhyd duud uisns iusnbdu djdj.</h6>
+                                <h5>Jonathan Dumebi</h5>
+                                <p>Maitama, Abuja</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/person2.png">
+                            <div class="inn">
+                                <h6>Lorem ipsum d iunduinuidv duoiuvdhdv dsunudvud dsuhudhudv dsinudvhudv duhduhdvn dsvudsuvnduv dsvuviindsu hbdhyd duud uisns iusnbdu djdj.</h6>
+                                <h5>Jonathan Dumebi</h5>
+                                <p>Maitama, Abuja</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/person1.png">
+                            <div class="inn">
+                                <h6>Lorem ipsum d iunduinuidv duoiuvdhdv dsunudvud dsuhudhudv dsinudvhudv duhduhdvn dsvudsuvnduv dsvuviindsu hbdhyd duud uisns iusnbdu djdj.</h6>
+                                <h5>Jonathan Dumebi</h5>
+                                <p>Maitama, Abuja</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/person2.png">
+                            <div class="inn">
+                                <h6>Lorem ipsum d iunduinuidv duoiuvdhdv dsunudvud dsuhudhudv dsinudvhudv duhduhdvn dsvudsuvnduv dsvuviindsu hbdhyd duud uisns iusnbdu djdj.</h6>
+                                <h5>Jonathan Dumebi</h5>
+                                <p>Maitama, Abuja</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"><i class="fas fa-chevron-right"></i></div>
+                    <div class="swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
                 </div>
             </div>
 
@@ -322,7 +377,36 @@
 
             
         
-    
+        <!-- Initialize Swiper -->
+
+        <script src="dist/swiper.min.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+              slidesPerView: 2,
+              spaceBetween: 30,
+              slidesPerGroup: 2,
+              loop: true,
+              loopFillGroupWithBlank: true,
+              autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+              },
+              pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+              },
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+              breakpoints: {
+                650: {
+                  slidesPerView: 1,
+                  spaceBetween: 10,
+                },
+              },
+            });
+        </script>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

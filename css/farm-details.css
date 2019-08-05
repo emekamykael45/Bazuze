@@ -303,6 +303,8 @@ body {
 
 .left .left-info img {
     max-width: 250px;
+    height: 250px;
+    border-radius: 6px;
 }
 .left .left-info .card-tag {
     position: absolute;
@@ -315,6 +317,10 @@ body {
     background: #FFFFFF;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.08);
     border-radius: 0px 100px 100px 0px;
+}
+
+.left .left-info img {
+
 }
 
 .left .info {
@@ -346,10 +352,10 @@ body {
     padding: 9px 18px;
     margin-top: 24px;
     margin-bottom: 24px;
-    color: #696262;
+    color: #73C124;
     font-weight: bold;
-    background: rgba(105, 98, 98, 0.2);
-    border: 2px solid #696262;
+    background: rgba(115, 193, 36, 0.2);
+    border: 2px solid #73C124;
     border-radius: 3px;
     cursor: pointer;
 }
@@ -388,9 +394,9 @@ body {
 }
 
 .left .info .insured img {
-    width: 70px;
+    width: 100px;
     height: 30px;
-    margin-left: 10px;
+    margin-top: 10px;
 }
 
 .section-three .right {
@@ -600,6 +606,7 @@ body {
     background: #FFFFFF;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.08);
     border-radius: 0px 100px 100px 0px;
+    z-index: 1;
 }
 
 .section-five .right .card .card-img {
@@ -608,10 +615,11 @@ body {
     border-radius: 6px 6px 0px 0px;
     object-fit: cover;
     object-position: center center;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 
 .section-five .right .card .card-inn {
-    padding: 20px;
+    padding: 15px 20px;
     padding-bottom: 15px;
 }
 
