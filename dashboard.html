@@ -109,7 +109,11 @@
                             </a>
                         </p>
                         <p class="link">
-                            <a href="#">
+                            <a href="" class="non-responsive-link" data-toggle="modal" data-target="#deactivateAccountModal">
+                                <i class="far fa-square"></i>
+                                <span>Account Officer</span>
+                            </a>
+                            <a href="" class="responsive-link" onclick="closeNav()" data-toggle="modal" data-target="#deactivateAccountModal">
                                 <i class="far fa-square"></i>
                                 <span>Account Officer</span>
                             </a>
@@ -127,6 +131,49 @@
                             </a>
                         </p>
                     </div>
+
+                    <!-- Deactivate Modal -->
+                    <div class="modal fade question new-user" id="deactivateAccountModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="static">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="images/tab-img.png">
+                                    <h5>Peter Okafor Obinna</h5>
+                                    <div class="phone-div">08099098909, 09087564893</div>
+
+                                    <p>Send a message across</p>
+                                    <form class="form">
+                                        <div class="form-group">
+                                            <textarea rows="6" placeholder="Type your message here" required></textarea>
+                                        </div>
+                                        <button class="btn send-btn">Send Message</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="modal fade success" id="deactivateAccountModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="images/check-gre-img.png">
+                                    <p>Account deactivated successfully.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
                 </div>
                 
             </div>  

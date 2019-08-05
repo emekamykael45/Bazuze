@@ -259,7 +259,7 @@ body {
     height: 100%;
     padding: 48px 32px;
     position: relative;
-    z-index: 1;
+    /*z-index: 1;*/
     overflow-x: hidden;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.03);
     border-radius: 6px;
@@ -300,6 +300,9 @@ body {
     margin: 0;
     margin-bottom: 35px;
 }
+.sidenav .inn .bottom .link .responsive-link {
+    display: none;
+}
 
 .sidenav .inn .bottom .link a {
     color: #2F2E2E;
@@ -326,6 +329,109 @@ body {
 
 .open-sidenav{
     display: none;
+}
+
+.modal.question .modal-header {
+    border: none;
+    margin-bottom: -40px;
+}
+
+.modal.question .modal-header .close {
+    padding-bottom: 50px !important;
+}
+
+.modal.question .modal-body {
+    padding: 25px 20px;
+    padding-bottom: 20px;
+    color: #4F4F4F;
+    font-size: 1em;
+    text-align: center;
+}
+
+.modal.question .modal-body img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    margin-bottom: 32px;
+}
+
+.modal.question .modal-body h5 {
+    margin-bottom: 26px;
+    font-weight: bold;
+}
+
+.modal.question .modal-body .phone-div {
+    color: #73C124;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 12px 10px;
+    background: #F8FAFB;
+    margin-bottom: 26px;
+}
+
+.modal.question .modal-body p {
+    font-size: 0.85em;
+    font-weight: bold;
+    text-align: left !important;
+    margin-bottom: 5px;
+}
+
+.modal.question .modal-body form {
+    background: #FFFFFF;
+    text-align: right;
+    border: 1.5px solid #DCE5EC;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.modal.question .modal-body form .form-group{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 20px;
+}
+
+.modal.question .modal-body textarea {
+    font-family: "Lato";
+    font-size: 0.9em;
+    padding: 10px;
+    border: 1px solid #DCE5EC;
+    border-radius: 3px;
+}
+
+.modal.question .modal-body .send-btn {
+    font-family: "Lato";
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 7px 24px;
+    color: #fff;
+    background: #73C124;
+    border-radius: 3px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+
+.modal.success .modal-header {
+    border-bottom: none;
+}
+
+.modal.success .modal-body {
+    padding: 10px 0px;
+    padding-bottom: 50px;
+    color: #4F4F4F;
+    text-align: center;
+    margin-top: -15px;
+}
+
+.modal.success .modal-body img {
+    width: 65px;
+    margin-bottom: 25px;
+}
+
+.modal.success .modal-body p {
+    font-size: 1.04em;
+    letter-spacing: 0.02em;
 }
 
 
@@ -748,8 +854,20 @@ footer .footer-nav .right-navs .right-nav-link-end{
 }
 
 @media screen and (max-width: 550px){
+    .above-nav {
+        padding: 9px 10px;
+    }
+
+    .navbar .logo{
+        margin-left: 45px;
+    }
+
     .layout {
         grid-template-columns: 1fr;
+    }
+
+    .modal-backdrop {
+        z-index: 9 !important;
     }
 
     .sidenav {
@@ -794,12 +912,11 @@ footer .footer-nav .right-navs .right-nav-link-end{
         padding-left: 15px;
     }
 
-    .above-nav {
-        padding: 9px 10px;
+    .sidenav .inn .bottom .link .non-responsive-link {
+        display: none;
     }
-
-    .navbar .logo{
-        margin-left: 45px;
+    .sidenav .inn .bottom .link .responsive-link {
+        display: block;
     }
 
     .main{
