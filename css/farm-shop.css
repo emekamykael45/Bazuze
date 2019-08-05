@@ -688,8 +688,8 @@ footer .footer-nav .right-navs .right-nav-link-end{
     }
 
     .navbar .mr-right{
-        margin-top: 5px;
-        margin-bottom: 65px;
+        margin-top: -10px;
+        margin-bottom: 10px;
     }
 
     .navbar .mr-right li{
