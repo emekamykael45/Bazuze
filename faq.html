@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Bazuze | About</title>
+        <title>Bazuze | FAQ</title>
         <link rel="icon" href="favicon.ico" />
         
         <!-- Bootstrap CSS CDN -->
@@ -19,7 +19,7 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
 
         <!-- Our Custom CSS -->
-        <link rel="stylesheet" href="css/about.css"/>
+        <link rel="stylesheet" href="css/faq.css"/>
 
         <!-- JS -->
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
@@ -47,13 +47,16 @@
                         <a href="index.html" class="links">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="about.html" class="links active">About us</a>
+                        <a href="about.html" class="links">About us</a>
                     </li>
                     <li class="nav-item">
                         <a href="farm-shop.html" class="links">Farm shop</a>
                     </li>
                     <li class="nav-item">
-                        <a href="help.html" class="links help-link">Help</a>
+                        <a href="help.html" class="links">Help</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cart.html" class="links help-link">Cart <img src="images/cart.png"></a>
                     </li>
                     
                     <li class="nav-item">
@@ -86,54 +89,74 @@
         <div class="main" id="main">
             
             <div class="section section-one">
-                <div class="inner">
-                    <img src="images/quote-icon.png">
-                    <p class="head-text">We are the Future</p>
-                    <p class="sub-head-text">An investment in agriculture is an investment<br>for the future.</p>
-                </div>
-                <div class="embed-responsive embed-responsive-4by3 header-img">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1"></iframe>
-                </div>
+                <h3>FAQ</h3>
+                <p>Frequently Asked Questions</p>
             </div>
 
             <div class="section section-two">
-                <div class="our-card">
-                    <img src="images/tab-img.png">
-                    <h5>OUR MISSION</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. fk Nullam congue fringilla turpis, in consequat risus scelerisque ut.</p>
-                </div>
+                <div id="accordion" class="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <button class="btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Who is Bazuze?
+                            </button>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                This is the absolute highest level of security available to any website. Although the actual encryption doesn't really change, what is noticeable is how carefully your site is vetted and checked before these highly trusted SSL certificates can be issued.
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="our-card">
-                    <img src="images/tab-img.png">
-                    <h5>OUR VISION</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. fk Nullam congue fringilla turpis, in consequat risus scelerisque ut.</p>
-                </div>
-            </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <button class="btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                What do we do?
+                            </button>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                This is the absolute highest level of security available to any website. Although the actual encryption doesn't really change, what is noticeable is how carefully your site is vetted and checked before these highly trusted SSL certificates can be issued.
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="section section-three">
-                <h3>Who are we?</h3>
-                <hr>
-                <p>BAZUZE is an agriculture commodity platform located in Nigeria that allows for<br>individual an opportunity to earn from the proceeds of farming. Bazuze does this<br>through the empowerment of underserved small farm owners by providing them<br>access to funds for farming, training on modern rearing, improved process and by<br>creating a ready market for those commodities.
-                </p>
-            </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <button class="btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                Is my money safe?
+                            </button>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body">
+                                This is the absolute highest level of security available to any website. Although the actual encryption doesn't really change, what is noticeable is how carefully your site is vetted and checked before these highly trusted SSL certificates can be issued.
+                            </div>
+                        </div>
+                    </div>
 
-             <div class="section section-four">
-                <h3>Why Agriculture</h3>
-                <hr>
-                <p>Why not agriculture? Agriculture contributes about 30% of Africa’s GDP and almost<br>70% of employment in Africa. It’s an industry in which its investment keeps pace<br>with inflation and increase in value over the long-term.
-                <br><br>
-                One of the major challenges faced by small farmers that is directly affecting their<br>income and standard of living is the Access to Markets. Lack of storage facilities<br>and access to ready market poses serious threats to farmers, where they are<br>unable to sell off their produce at a good price after harvest. Thus leads to massive<br>post-harvest losses and food wastage. Bazuze is creating a platform for these and<br>we are socially influencing the livelihood, increase the productivity of the partner<br>farmers, and create wealth for our financial partners through commodity trading.</p>
-            </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <button class="btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                How long can i hold?
+                            </button>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                            <div class="card-body">
+                                This is the absolute highest level of security available to any website. Although the actual encryption doesn't really change, what is noticeable is how carefully your site is vetted and checked before these highly trusted SSL certificates can be issued.
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="section section-seven">
-                <div class="left">
-                    <p>Subscribe to our newsletter and get update on produce when they are available</p>
-                </div>
-                <div class="right">
-                    <div class="input-group mb-3">
-                        <input type="email" class="form-control" placeholder="Enter email here" required>
-                        <div class="input-group-append">
-                            <button class="btn subscribe-btn" type="button" id="button-addon2">Subscribe</button>
+                    <div class="card">
+                        <div class="card-header" id="headingFive">
+                            <button class="btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                How sure is my return?
+                            </button>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                            <div class="card-body">
+                                This is the absolute highest level of security available to any website. Although the actual encryption doesn't really change, what is noticeable is how carefully your site is vetted and checked before these highly trusted SSL certificates can be issued.
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -204,15 +227,6 @@
         
     
 
-        <script>
-            $(function () {
-                $(document).scroll(function () {
-                    var $nav = $(".navbar");
-                    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-                });
-            });
-        </script>
-        
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

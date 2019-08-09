@@ -242,7 +242,12 @@ body {
     padding-top: 40px !important;
     padding-bottom: 40px !important;
     text-align: center;
-    background: rgba(196, 196, 196, 0.3) !important;
+    background: rgba(196, 196, 196, 0.3);
+    background-image: url(../images/page-header-back.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .section-one h3 {
@@ -358,6 +363,17 @@ body {
     border: 2px solid #73C124;
     border-radius: 3px;
     cursor: pointer;
+}
+
+.left .info a.follow {
+    color: #73C124;
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-left: 20px;
+}
+.left .info a.follow:hover {
+    color: #73C124;
+    text-decoration: none;
 }
 
 .left .info .return-img {
@@ -732,7 +748,7 @@ footer .row, footer .col-md-6, footer .columns{
 
 footer .columns-row {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
 }
 
@@ -742,23 +758,34 @@ footer hr{
 }
 
 footer .columns .footer-link-header-text{
-    font-size: 1em;
+    font-size: 1.15em;
+    font-weight: bold;
     letter-spacing: 0.02em;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 footer .columns .footer-links p {
-    margin-bottom: 12px;
+    margin-bottom: 15px;
+    color: #BEDC9F;
+    font-size: 0.9em;
 }
 
 footer .columns .footer-links .link{
-    color: #dadada;
-    font-size: 0.9em;
+    color: #BEDC9F;
     letter-spacing: 0.02em;
 }
-
 footer .columns .footer-links .link:hover{
     color: #fafafa;
+}
+
+footer .columns .footer-links .img-link:hover{
+    text-decoration: none;
+}
+
+footer .columns .footer-links .img-link img {
+    height: 40px;
+    width: 90px;
+    margin-bottom: 20px;
 }
 
 footer .columns .links-icon-row{
@@ -793,26 +820,6 @@ footer .footer-nav .copyright-text{
     margin: 0;
     font-size: 0.9em;
     letter-spacing: 0.02em;
-}
-
-footer .footer-nav .right-navs{
-    position: absolute;
-    right: 0;
-}
-
-footer .footer-nav .right-navs .right-nav-link{
-    margin-right: 40px;
-    color: #dadada;
-    font-size: 0.9em;
-    letter-spacing: 0.02em;
-}
-
-footer .footer-nav .right-navs .right-nav-link:hover{
-    color: #fafafa;
-}
-
-footer .footer-nav .right-navs .right-nav-link-end{
-    margin-right: 0px;
 }
 
 /* Footer Ends Here */

@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Bazuze | Dashboard</title>
+        <title>Bazuze | Settings</title>
         <link rel="icon" href="favicon.ico" />
         
         <!-- Bootstrap CSS CDN -->
@@ -19,7 +19,7 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
 
         <!-- Our Custom CSS -->
-        <link rel="stylesheet" href="css/dashboard.css"/>
+        <link rel="stylesheet" href="css/settings.css"/>
 
         <!-- JS -->
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
@@ -205,92 +205,180 @@
 
                 <div class="main-page-content">
 
-                    <h5 class="hello">Hello Mayowa Adesina,</h5>
-                    <p class="you-currently">You currently sponsor 1 commodity.</p>
+                    <br><br>
+                    <p class="info-text">PROFILE SETTINGS</p>
+                    <p class="you-currently">Update your personal and other informations.</p>
 
-                    <div class="tabs">
-                        <div class="tab">
-                            <img src="images/tab-img.png">
-                            <div class="right">
-                                <p>Expected Returns</p>
-                                <h4>₦270,000</h4>
+                    <div class="info-box">
+
+                        <nav class="navigation">
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-one" href="#personal" role="tab" aria-controls="nav-one" aria-selected="true">
+                                    <h6>1</h6>
+                                    <p>Personal Details</p>
+                                </a>
+                                <a class="nav-item nav-link" id="nav-two" href="#contact" role="tab" aria-controls="nav-two" aria-selected="false">
+                                    <h6>2</h6>
+                                    <p>Contact Details</p>
+                                </a>
+                                <a class="nav-item nav-link" id="nav-three" href="#bank" role="tab" aria-controls="nav-three" aria-selected="false">
+                                    <h6>3</h6>
+                                    <p>Bank Details</p>
+                                </a>
+                                <a class="nav-item nav-link last" id="nav-four" href="#kin" role="tab" aria-controls="nav-four" aria-selected="false">
+                                    <h6>4</h6>
+                                    <p>Next of Kin</p>
+                                </a>
                             </div>
-                        </div>
+                        </nav>
 
-                        <div class="tab">
-                            <img src="images/tab-img.png">
-                            <div class="right">
-                                <p>Next end of circle</p>
-                                <h4>₦270,000</h4>
+                        <div class="section" id="personal">
+                            <div class="section-header">
+                                <h5>Personal Details</h5>
+                                <button class="edit-btn">Edit</button>
                             </div>
+                            <form class="form">
+                                <div class="form-group">
+                                    <label>Full Name <em>(Important)</em></label>
+                                    <input type="name" class="form-control">
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-lg-6">
+                                        <label>Date of Birth <em>(Important)</em></label>
+                                        <!-- Calendar Here -->
+                                        <select class="custom-select">
+                                            <option value="1">Mon 21 Apr, 2019</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                        <label>Gender <em>(Important)</em></label>
+                                        <select class="custom-select">
+                                            <option value="1">Male</option>
+                                            <option value="2">Female</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-lg-6">
+                                        <label>Email <em>(Important)</em></label>
+                                        <input type="email" class="form-control">
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                        <label>Phone Number <em>(Important)</em></label>
+                                        <input type="number" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-lg-6">
+                                        <label>Nationality</label>
+                                        <select class="custom-select date-select">
+                                            <option value="1">Nigerian</option>
+                                            <option value="2">Senegalese</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                        <label>Occupation <em>(Important)</em></label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </form>
                         </div>
 
-                        <div class="tab">
-                            <img src="images/tab-img.png">
-                            <div class="right">
-                                <p>Collected returns</p>
-                                <h4>₦270,000</h4>
+                        <div class="section" id="contact">
+                            <div class="section-header">
+                                <h5>Contact Details</h5>
+                                <button class="edit-btn">Save changes</button>
                             </div>
+                            <form class="form">
+                                <div class="form-group">
+                                    <label>Address <em>(Important)</em></label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-lg-6">
+                                        <label>Country <em>(Important)</em></label>
+                                        <select class="custom-select">
+                                            <option value="1">Nigeria</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                        <label>State / province / region <em>(Important)</em></label>
+                                        <select class="custom-select">
+                                            <option value="1">Lagos</option>
+                                            <option value="2">Taraba</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-lg-6">
+                                        <label>City <em>(Important)</em></label>
+                                        <select class="custom-select">
+                                            <option value="1">Apapa</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
-                    </div>
 
-                    <div class="section-two">
-                        <p class="info-text">FARMS YOU SPONSOR</p>
-                        <div class="cards">
-                            <a href="farm-details.html" class="card">
-                                <p class="card-tag">Now Selling</p>
-                                <img src="images/card-img-1.png" class="card-img">
-                                <div class="card-inn">
-                                    <h3>Maize</h3>
-                                    <p class="period">6 Months period</p>
-                                    <img src="images/return-img.png" class="return-img"><span class="returns">Returns</span>
-
-                                    <div class="percent-div">
-                                        <div class="percent">25%</div>
-                                        <div class="percent">35%</div>
-                                        <div class="percent">40%</div>
-                                    </div>
-                                    <hr>
-                                    <img src="images/location-img.png" class="location-img"><span class="state">Lagos state</span>
+                        <div class="section" id="bank">
+                            <div class="section-header">
+                                <h5>Bank Details</h5>
+                                <button class="edit-btn">Edit</button>
+                            </div>
+                            <form class="form">
+                                <div class="form-group">
+                                    <label>Account Name <em>(Important)</em></label>
+                                    <input type="name" class="form-control">
                                 </div>
-                            </a>
-
-                            <a href="farm-details.html" class="card">
-                                <p class="card-tag">Now Selling</p>
-                                <img src="images/card-img-2.png" class="card-img">
-                                <div class="card-inn">
-                                    <h3>Maize</h3>
-                                    <p class="period">6 Months period</p>
-                                    <img src="images/return-img.png" class="return-img"><span class="returns">Returns</span>
-
-                                    <div class="percent-div">
-                                        <div class="percent">25%</div>
-                                        <div class="percent">35%</div>
-                                        <div class="percent">40%</div>
+                                <div class="form-row">
+                                    <div class="form-group col-lg-6">
+                                        <label>Account Number <em>(Important)</em></label>
+                                        <input type="number" class="form-control">
                                     </div>
-                                    <hr>
-                                    <img src="images/location-img.png" class="location-img"><span class="state">Lagos state</span>
-                                </div>
-                            </a>
-
-                            <a href="farm-details.html" class="card">
-                                <p class="card-tag">Now Selling</p>
-                                <img src="images/card-img-3.png" class="card-img">
-                                <div class="card-inn">
-                                    <h3>Maize</h3>
-                                    <p class="period">6 Months period</p>
-                                    <img src="images/return-img.png" class="return-img"><span class="returns">Returns</span>
-
-                                    <div class="percent-div">
-                                        <div class="percent">25%</div>
-                                        <div class="percent">35%</div>
-                                        <div class="percent">40%</div>
+                                    <div class="form-group col-lg-6">
+                                        <label>Bank Name <em>(Important)</em></label>
+                                        <select class="custom-select">
+                                            <option value="1">First Bank</option>
+                                            <option value="2">Guaranty Trust Bank</option>
+                                        </select>
                                     </div>
-                                    <hr>
-                                    <img src="images/location-img.png" class="location-img"><span class="state">Lagos state</span>
                                 </div>
-                            </a>
+                            </form>
                         </div>
+
+                        <div class="section" id="kin">
+                            <div class="section-header">
+                                <h5>Next of Kin</h5>
+                                <button class="edit-btn">Edit</button>
+                            </div>
+                            <form class="form">
+                                <div class="form-group">
+                                    <label>Full Name <em>(Important)</em></label>
+                                    <input type="name" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Address <em>(Important)</em></label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-lg-6">
+                                        <label>Email <em>(Important)</em></label>
+                                        <input type="email" class="form-control">
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                        <label>Phone Number <em>(Important)</em></label>
+                                        <input type="number" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-lg-6">
+                                        <label>Relationship <em>(Important)</em></label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
                     </div>
 
                 </div>

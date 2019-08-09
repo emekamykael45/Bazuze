@@ -1,0 +1,201 @@
+*{
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline:none !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+a:focus,
+button:focus,
+input:focus,
+input:active,
+textarea:focus,
+select:focus,
+.form-control:focus {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+a:focus {
+    color: #73C124 !important;
+}
+
+select:focus {
+    border: 1px solid #ddd !important;
+}
+
+input:focus, textarea:focus {
+    border: 0.5px solid #73C124 !important;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    color: #2F2E2E;
+    letter-spacing: 0.02em !important;
+    background: url('../images/cs-background-img.png') no-repeat center center fixed;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode: lighten;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* Main Page Starts Here */
+
+.main{
+    position: relative;
+    margin: 0;
+    padding: 50px 50px !important;
+}
+
+.main .logo{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+.main .logo img{
+    width: 35px;
+    height: 35px;
+}
+
+.main .form-div {
+    margin: 0 auto;
+    max-width: 470px;
+}
+
+.form-div h5 {
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.form-div h6 {
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.form-div .form {
+    width: 100%;
+}
+
+.form .form-group {
+    margin-bottom: 24px;
+}
+
+.form-group label {
+    font-size: 0.85em;
+    color: #3C3C3C;
+}
+.form-group span {
+    display: none;
+    font-size: 0.8em;
+    color: #C63232;
+    text-align: right;
+    float: right;
+}
+
+.form-group input, .form-group select {
+    font-family: "Lato";
+    font-size: 0.9em;
+    border-radius: 3px;
+    border: 1px solid #DCE5EC;
+}
+
+.form-group .input-group {
+    border: 1px solid #DCE5EC;
+    border-radius: 3px;
+}
+
+.form-group .input-group input {
+    border: none;
+}
+
+.form-group .input-group-text {
+    background-color: #fff;
+    border: none;
+    border-right: 1px solid #DCE5EC;
+    border-radius: 0px 3px 3px 0px;
+    cursor: pointer;
+}
+
+.custom-control{
+    margin-top: -8px;
+    margin-bottom: 34px;
+    font-size: 0.9em;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    background-color: #73C124 !important;
+}
+
+.custom-control label a {
+    color: #3C3C3C;
+    font-weight: bold;
+}
+.custom-control label a:hover {
+    text-decoration: none;
+}
+
+.sign-up-btn {
+    font-family: "Lato";
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    background: #73C124;
+    border-radius: 3px;
+    margin-bottom: 24px;
+}
+
+.already {
+    font-size: 0.9em;
+    margin: 0;
+    text-align: center;
+}
+
+.already a {
+    color: #73C124;
+    font-weight: bold;
+}
+.already a:hover {
+    text-decoration: none;
+}
+
+/* Main Page Ends Here */
+
+
+
+/*Responsive Page Starts Here*/
+
+@media screen and (max-width: 680px){
+    .main .logo{
+        position: relative;
+    }
+
+    .main .form-div {
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .main{
+        margin: 0;
+        padding: 20px 15px !important;
+    }
+}
