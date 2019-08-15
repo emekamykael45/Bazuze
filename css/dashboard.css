@@ -152,7 +152,7 @@ body {
     margin-top: -7px;
 }
 .navbar .mr-right .nav-item.dropdown .help:hover {
-    color: #9A6BF2;
+    color: #73C124;
     transition: all .1s ease-in-out;
 }
 
@@ -174,14 +174,14 @@ body {
     margin-top: -10px;
 }
 .navbar .mr-right .nav-item.dropdown .username:hover {
-    color: #9A6BF2;
+    color: #73C124;
     transition: all .1s ease-in-out;
 }
 
 .navbar .mr-right .nav-item.dropdown img {
     width: 36px;
     margin-top: -2px;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .nav-item.dropdown .dropdown-menu {
@@ -201,7 +201,7 @@ body {
 
 .nav-item.dropdown .dropdown-menu .dropdown-item:focus {
     background: #fff !important;
-    color: #9A6BF2 !important;
+    color: #73C124 !important;
 }
 
 .layout {
@@ -311,9 +311,14 @@ body {
     text-decoration: none;
     color: #73C124;
 }
+.sidenav .inn .bottom .link a.active {
+    color: #73C124;
+    font-weight: bold;
+}
 
 .sidenav .inn .bottom .link a i {
     margin-right: 15px;
+    font-size: 1.05em;
 }
 
 /* Position and style the close button (top right corner) */
@@ -488,6 +493,7 @@ body {
 .tabs .tab .right p {
     font-size: 0.9em;
     margin-bottom: 10px;
+    color: #76787A;
 }
 .tabs .tab .right h4 {
     font-size: 1.4em;

@@ -77,12 +77,6 @@ body {
     padding: 0;
 }
 
-.navbar .logo{
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
 .navbar .logo img{
     width: 35px;
     height: 35px;
@@ -120,13 +114,19 @@ body {
     color: #2F2E2E;
     font-size: 0.94em;
 }
+.navbar .mr-right li .links img {
+    width: 16px;
+    height: 15px;
+    margin-left: 3px;
+    margin-top: -3px;
+}
 .navbar .mr-right li .links.active {
     color: #73C124;
     font-weight: bold;
 }
 
 .navbar .mr-right li .links.help-link {
-    margin-right: 100px;
+    margin-right: 80px;
 }
 
 .navbar .mr-right li.login {
@@ -157,7 +157,7 @@ body {
     margin-top: -7px;
 }
 .navbar .mr-right .nav-item.dropdown .help:hover {
-    color: #9A6BF2;
+    color: #73C124;
     transition: all .1s ease-in-out;
 }
 
@@ -179,14 +179,14 @@ body {
     margin-top: -10px;
 }
 .navbar .mr-right .nav-item.dropdown .username:hover {
-    color: #9A6BF2;
+    color: #73C124;
     transition: all .1s ease-in-out;
 }
 
 .navbar .mr-right .nav-item.dropdown img {
     width: 36px;
     margin-top: -2px;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .nav-item.dropdown .dropdown-menu {
@@ -206,7 +206,7 @@ body {
 
 .nav-item.dropdown .dropdown-menu .dropdown-item:focus {
     background: #fff !important;
-    color: #9A6BF2 !important;
+    color: #73C124 !important;
 }
 
 .open-nav{
@@ -443,7 +443,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 80px;
     margin-top: 80px;
-    padding-bottom: 120px;
+    padding-bottom: 180px;
 }
 
 .why-cards .why-card img {
@@ -701,9 +701,10 @@ footer .columns .footer-links .img-link:hover{
 }
 
 footer .columns .footer-links .img-link img {
-    height: 40px;
-    width: 90px;
+    height: 35px;
+    width: 100px;
     margin-bottom: 20px;
+    border-radius: 6px;
 }
 
 footer .columns .links-icon-row{
