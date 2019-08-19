@@ -50,7 +50,7 @@
                         <a href="about.html" class="links">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a href="farm-shop.html" class="links">Farm shop</a>
+                        <a href="produce-shop.html" class="links">Produce shop</a>
                     </li>
                     <li class="nav-item">
                         <a href="help.html" class="links">Help</a>
@@ -93,51 +93,51 @@
                     <div class="bottom">
                         <p class="link">
                             <a href="dashboard.html">
-                                <i class="far fa-square"></i>
+                                <i class="far fa-chart-bar"></i>
                                 <span>Dashboard</span>
                             </a>
                         </p>
                         <p class="link">
                             <a href="produce-following.html" class="active">
-                                <i class="far fa-square"></i>
+                                <i class="far fa-check-circle"></i>
                                 <span>Produce Following</span>
                             </a>
                         </p>
                         <p class="link">
                             <a href="" class="non-responsive-link" data-toggle="modal" data-target="#accountOfficerModal">
-                                <i class="far fa-square"></i>
+                                <i class="far fa-user"></i>
                                 <span>Account Officer</span>
                             </a>
                             <a href="" class="responsive-link" onclick="closeNav()" data-toggle="modal" data-target="#accountOfficerModal">
-                                <i class="far fa-square"></i>
+                                <i class="far fa-user"></i>
                                 <span>Account Officer</span>
                             </a>
                         </p>
                         <p class="link">
                             <a href="settings.html">
-                                <i class="far fa-square"></i>
+                                <i class="fas fa-cog"></i>
                                 <span>Profile Settings</span>
                             </a>
                         </p>
                         <p class="link">
                             <a href="" class="non-responsive-link" data-toggle="modal" data-target="#passwordModal">
-                                <i class="far fa-square"></i>
+                                <i class="fas fa-lock"></i>
                                 <span>Password Settings</span>
                             </a>
                             <a href="" class="responsive-link" onclick="closeNav()" data-toggle="modal" data-target="#passwordModal">
-                                <i class="far fa-square"></i>
+                                <i class="fas fa-lock"></i>
                                 <span>Password Settings</span>
                             </a>
                         </p>
                         <p class="link">
                             <a href="sign-in.html">
-                                <i class="far fa-square"></i>
+                                <i class="fas fa-power-off"></i>
                                 <span>Log Out</span>
                             </a>
                         </p>
                     </div>
 
-                    <!-- Deactivate Modal -->
+                    <!-- Account Officer Modal -->
                     <div class="modal fade question new-user" id="accountOfficerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="static">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
@@ -156,28 +156,44 @@
                                         <div class="form-group">
                                             <textarea rows="6" placeholder="Type your message here" required></textarea>
                                         </div>
-                                        <button class="btn send-btn" data-dismiss="modal">Send Message</button>
+                                        <button class="btn send-btn">Send Message</button>
                                     </form>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- <div class="modal fade success" id="accountOfficerModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+
+                    <!-- Password Modal -->
+                    <div class="modal fade question new-user" id="passwordModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="static">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
-                                <div class="modal-header">
+                                <div class="modal-header password-header">
+                                    <span>Password Settings</span>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <img src="images/check-gre-img.png">
-                                    <p>Account deactivated successfully.</p>
+                                    <form class="form password-form">
+                                        <div class="form-group">
+                                            <label>Old password</label>
+                                            <input type="password" class="form-control" placeholder="Enter old password" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>New password</label>
+                                            <input type="password" class="form-control" placeholder="Enter new password" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Confirm password</label>
+                                            <input type="password" class="form-control" placeholder="Confirm new password" required>
+                                        </div>
+                                        <button class="btn confirm-btn">CONFIRM PASSWORD CHANGE</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
 
                 </div>
                 
@@ -198,7 +214,7 @@
                         <p class="info-text">PRODUCE YOU FOLLOW</p>
                         <p class="you-currently">You currently follow 1 produce.</p>
                         <div class="cards">
-                            <a href="farm-details.html" class="card">
+                            <a href="produce-details.html" class="card">
                                 <p class="card-tag">Now Selling</p>
                                 <img src="images/card-img-1.png" class="card-img">
                                 <div class="card-inn">
@@ -216,7 +232,7 @@
                                 </div>
                             </a>
 
-                            <a href="farm-details.html" class="card">
+                            <a href="produce-details.html" class="card">
                                 <p class="card-tag">Now Selling</p>
                                 <img src="images/card-img-2.png" class="card-img">
                                 <div class="card-inn">
@@ -234,7 +250,7 @@
                                 </div>
                             </a>
 
-                            <a href="farm-details.html" class="card">
+                            <a href="produce-details.html" class="card">
                                 <p class="card-tag">Now Selling</p>
                                 <img src="images/card-img-3.png" class="card-img">
                                 <div class="card-inn">
@@ -274,8 +290,8 @@
                 <div class="columns">
                     <p class="footer-link-header-text">Legal</p>
                     <div class="footer-links">
-                        <p><a href="privacy.html" class="link">Privacy Policy</a></p>
-                        <p><a href="terms.html" class="link">Terms</a></p>
+                        <p><a href="#" class="link">Privacy Policy</a></p>
+                        <p><a href="#" class="link">Terms</a></p>
                         <p><a href="#" class="link">Disclaimer</a></p>
                     </div>
                 </div>
@@ -287,22 +303,22 @@
                         <p>+2347097898787</p>
                     </div>
                     <div class="links-icon-row">
-                        <a href="" class="link"><i class="twitter icon"></i></a>
-                        <a href="" class="link"><i class="instagram icon"></i></a>
-                        <a href="" class="link"><i class="facebook square icon"></i></a>
-                        <a href="" class="link"><i class="youtube icon"></i></a>
+                        <a href="" class="link"><i class="fab fa-facebook-square"></i></a>
+                        <a href="" class="link"><i class="fab fa-instagram"></i></a>
+                        <a href="" class="link"><i class="fab fa-twitter-square"></i></a>
+                        <a href="" class="link"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
 
                 <div class="columns">
                     <p class="footer-link-header-text">Coming soon</p>
                     <div class="footer-links">
-                        <a href="about.html" class="img-link">
-                            <img src="images/patner-img.png">
+                        <a href="" class="img-link">
+                            <img src="images/google-play.png">
                         </a>
                         <br>
-                        <a href="about.html" class="img-link">
-                            <img src="images/patner-img.png">
+                        <a href="" class="img-link">
+                            <img src="images/app-store.jpg">
                         </a>
                     </div>
                 </div>

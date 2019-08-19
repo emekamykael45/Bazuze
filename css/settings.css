@@ -322,6 +322,7 @@ body {
 
 .sidenav .inn .bottom .link a i {
     margin-right: 15px;
+    font-size: 1.05em;
 }
 
 /* Position and style the close button (top right corner) */
@@ -344,8 +345,22 @@ body {
     margin-bottom: -40px;
 }
 
+.modal.question .modal-header.password-header {
+    background: #F8FAFB;
+    padding-bottom: 0px;
+    margin: 0;
+}
+
+.modal.question .modal-header span {
+    text-align: center !important;
+    font-weight: bold;
+}
+
 .modal.question .modal-header .close {
     padding-bottom: 50px !important;
+}
+.modal.question .modal-header.password-header .close {
+    padding-bottom: 35px !important;
 }
 
 .modal.question .modal-body {
@@ -392,10 +407,29 @@ body {
     margin-bottom: 10px;
 }
 
-.modal.question .modal-body form .form-group{
+.modal.question .modal-body form.password-form {
+    border: none;
+    margin-top: 10px;
+}
+
+.modal.question .modal-body form .form-group {
     display: grid;
     grid-template-columns: 1fr;
     margin-bottom: 20px;
+}
+.modal.question .modal-body form.password-form .form-group {
+    margin-bottom: 30px;
+}
+
+.modal.question .modal-body form.password-form label {
+    text-align: left;
+    font-size: 0.85em;
+}
+
+.modal.question .modal-body form.password-form input {
+    font-family: "Lato";
+    padding: 14.5px 10px;
+    padding-bottom: 17px;
 }
 
 .modal.question .modal-body textarea {
@@ -417,6 +451,21 @@ body {
     margin-top: -10px;
     margin-bottom: 10px;
     margin-right: 10px;
+    cursor: pointer;
+}
+
+.modal.question .modal-body .confirm-btn {
+    font-family: "Lato";
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 24px;
+    width: 100%;
+    color: #fff;
+    background: #73C124;
+    border-radius: 3px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
 }
 
 
@@ -570,8 +619,6 @@ body {
 }
 
 
-
-
 /* Footer Starts Here */
 
 footer{
@@ -625,9 +672,10 @@ footer .columns .footer-links .img-link:hover{
 }
 
 footer .columns .footer-links .img-link img {
-    height: 40px;
-    width: 90px;
+    height: 35px;
+    width: 100px;
     margin-bottom: 20px;
+    border-radius: 6px;
 }
 
 footer .columns .links-icon-row{

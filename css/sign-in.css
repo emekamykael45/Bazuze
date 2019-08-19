@@ -178,6 +178,21 @@ body {
     margin-bottom: 24px;
 }
 
+.already {
+    font-size: 0.9em;
+    margin: 0;
+    text-align: center;
+}
+
+.already a {
+    color: #73C124;
+    font-weight: bold;
+}
+.already a:hover {
+    text-decoration: none;
+}
+
+
 /* Main Page Ends Here */
 
 
