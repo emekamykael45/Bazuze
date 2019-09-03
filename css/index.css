@@ -87,6 +87,7 @@ body {
     margin: 0;
     padding-top: 2px;
     font-size: 1em;
+    color: #73C124;
 }
 
 .navbar .mr-auto {
@@ -583,6 +584,12 @@ body {
     padding-bottom: 20px;
 }
 
+.section-five .patner-div img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
 .section-six {
     width: 100%;
     margin-top: 90px;
@@ -855,6 +862,15 @@ footer .footer-nav .copyright-text{
     }
 }
 
+@media screen and (max-width: 850px) {
+    .section-five .patner-div {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 20px;
+        text-align: center;
+    }
+}
+
 @media screen and (max-width: 767px){
     .navbar{
         padding: 7px 20px;
@@ -941,13 +957,6 @@ footer .footer-nav .copyright-text{
         width: 90%;
     }
 
-    .section-five .patner-div {
-        display: grid;
-        grid-template-columns: repeat(3, auto);
-        grid-gap: 20px;
-        text-align: center;
-    }
-
     .section-six {
         display: grid;
         grid-template-columns: 1fr;
@@ -988,6 +997,11 @@ footer .footer-nav .copyright-text{
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 30px;
     }
+
+    .section-five .patner-div {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
 }
 
 @media screen and (max-width: 400px){
@@ -1001,6 +1015,12 @@ footer .footer-nav .copyright-text{
 }
 
 @media screen and (max-width: 378px){
+    .section-five .patner-div img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+    }
+
     footer .footer-nav .copyright-text{
         font-size: 0.8em;
     }
